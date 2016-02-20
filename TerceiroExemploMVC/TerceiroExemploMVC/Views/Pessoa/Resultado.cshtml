@@ -1,0 +1,46 @@
+﻿@model TerceiroExemploMVC.Models.Pessoa
+@{
+    ViewBag.Title = "Resultado";
+}
+
+<h2>Resultado</h2>
+
+<fieldset>
+    <legend>Resultado</legend>
+    <div>
+        <label for="nome">Nome</label>
+    </div>
+    <div>
+        <label>@Model.Nome</label>
+    </div>
+    <br />
+    <div>
+        <label for="observacao">Observação</label>
+    </div>
+    <div>
+        <label>@Model.Observacao</label>
+    </div>
+    <br />
+    <div>
+        <label for="idade">Idade</label>
+    </div>
+    <div>
+        <label>@Model.Idade</label>
+    </div>
+    <br />
+    <div>
+        <label for="email">E-mail</label>
+    </div>
+    <div>
+        <label>@Model.Email</label>
+    </div>
+    <br />
+    <div>
+        <label for="login">Login</label>
+    </div>
+    <div>
+        <label>@Model.Login</label>
+    </div>
+    <br />
+    @Html.ActionLink("Voltar", "Index", "Pessoa")
+</fieldset>
